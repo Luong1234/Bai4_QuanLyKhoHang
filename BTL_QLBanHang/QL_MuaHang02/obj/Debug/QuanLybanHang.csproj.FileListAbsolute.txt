@@ -210,3 +210,30 @@ E:\hoc\ky5 -I- 2015\CSDL\BTLon_QLBanHang\Dũng - Lượng\BTL_QLBanHang\QL_MuaHa
 E:\hoc\ky5 -I- 2015\CSDL\BTLon_QLBanHang\Dũng - Lượng\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
 E:\hoc\ky5 -I- 2015\CSDL\BTLon_QLBanHang\Dũng - Lượng\BTL_QLBanHang\QL_MuaHang02\obj\Debug\RdlCompile.cache
 E:\hoc\ky5 -I- 2015\CSDL\BTLon_QLBanHang\Dũng - Lượng\BTL_QLBanHang\QL_MuaHang02\obj\Debug\RdlCompile.compiled
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QL_MuaHang02.exe.config
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QL_MuaHang02.exe
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QL_MuaHang02.pdb
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QL_MuaHang02.exe
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QL_MuaHang02.pdb
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\BusinessLogic.dll
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\BusinessLogic.pdb
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QLBanHangCacDoiTuong.pdb
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QLBanHangKetNoiData.pdb
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QuanLyBanHangEntity.pdb
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmBanHang.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmDangNhap.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmHoaDonBan.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmInHDB.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmKhachHang.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmThongKe.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.Main.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmHoaDonNhap.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmLoaiHang.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmNhaCungCap.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmSanPham.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.frmThemHD.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\RdlCompile.cache
+E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\RdlCompile.compiled

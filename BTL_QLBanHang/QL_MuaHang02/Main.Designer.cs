@@ -50,11 +50,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -86,7 +86,7 @@
             this.hêThôngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.hêThôngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("hêThôngToolStripMenuItem.Image")));
             this.hêThôngToolStripMenuItem.Name = "hêThôngToolStripMenuItem";
-            this.hêThôngToolStripMenuItem.Size = new System.Drawing.Size(75, 23);
+            this.hêThôngToolStripMenuItem.Size = new System.Drawing.Size(74, 23);
             this.hêThôngToolStripMenuItem.Text = "Views";
             // 
             // danhSáchMặtHàngToolStripMenuItem
@@ -181,7 +181,7 @@
             // 
             this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(154, 24);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(153, 24);
             this.toolStripMenuItem4.Text = "Type Goods";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -189,14 +189,14 @@
             // 
             this.nhaCungCâpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nhaCungCâpToolStripMenuItem.Image")));
             this.nhaCungCâpToolStripMenuItem.Name = "nhaCungCâpToolStripMenuItem";
-            this.nhaCungCâpToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
+            this.nhaCungCâpToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.nhaCungCâpToolStripMenuItem.Text = "Made";
             this.nhaCungCâpToolStripMenuItem.Click += new System.EventHandler(this.nhaCungCâpToolStripMenuItem_Click);
             // 
             // hoaĐơnNhâpHangToolStripMenuItem
             // 
             this.hoaĐơnNhâpHangToolStripMenuItem.Name = "hoaĐơnNhâpHangToolStripMenuItem";
-            this.hoaĐơnNhâpHangToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
+            this.hoaĐơnNhâpHangToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.hoaĐơnNhâpHangToolStripMenuItem.Text = "Import Bills";
             this.hoaĐơnNhâpHangToolStripMenuItem.Click += new System.EventHandler(this.hoaĐơnNhâpHangToolStripMenuItem_Click);
             // 
@@ -233,7 +233,9 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1360, 34);
             this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Text = "                                                          Designed by Fantastic 4" +
+    "                                                                                " +
+    "                                   ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel2
@@ -246,6 +248,29 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1362, 646);
             this.panel2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(22, 596);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(241, 31);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Customers are Gods!";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1360, 644);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // timer1
             // 
@@ -262,29 +287,6 @@
             // 
             this.timer3.Interval = 200;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1360, 644);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(22, 596);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 31);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Customers are Gods!";
             // 
             // Main
             // 
