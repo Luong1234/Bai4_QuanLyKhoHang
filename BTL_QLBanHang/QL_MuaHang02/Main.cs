@@ -75,7 +75,7 @@ namespace QuanLyBanHang
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to quit?", "Warn!", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Do you want to quit?", "Warning!", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 this.Close();
             }
