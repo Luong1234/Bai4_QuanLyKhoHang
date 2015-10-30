@@ -237,6 +237,3 @@ E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaH
 E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
 E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\RdlCompile.cache
 E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\RdlCompile.compiled
-E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\bin\Debug\QL_MuaHang02.exe.config
-E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QL_MuaHang02.exe
-E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\QL_MuaHang02\obj\Debug\QL_MuaHang02.pdb
