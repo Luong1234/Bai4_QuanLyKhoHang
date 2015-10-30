@@ -13,7 +13,7 @@ namespace BusinessLogic
         SqlConnection cn = new SqlConnection();
         static public String getconnect()
         {
-            return (@"Data Source=HOA_LONG\SQLEXPRESS;Initial Catalog=BTL;Integrated Security=True");
+            return (@"Data Source=NHOXHOANGANH\SQLEXPRESS;Initial Catalog=BTL;Integrated Security=True");
         }
     }
 }

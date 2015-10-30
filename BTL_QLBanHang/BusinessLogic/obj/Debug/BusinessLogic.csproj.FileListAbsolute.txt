@@ -82,3 +82,11 @@ E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\Busines
 E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
 E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\obj\Debug\BusinessLogic.dll
 E:\Hoc tap\Ki I 2015-2016\Thuc tap nhom\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\obj\Debug\BusinessLogic.pdb
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\bin\Debug\BusinessLogic.dll
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\bin\Debug\BusinessLogic.pdb
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\bin\Debug\QLBanHangCacDoiTuong.pdb
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\bin\Debug\QLBanHangKetNoiData.pdb
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\bin\Debug\QuanLyBanHangEntity.pdb
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\obj\Debug\BusinessLogic.dll
+E:\Clone\Bai4_QuanLyKhoHang\BTL_QLBanHang\BusinessLogic\obj\Debug\BusinessLogic.pdb
