@@ -26,12 +26,21 @@ namespace QL_KhoHang
         public void HienThi()
         {
             dataGridView1.DataSource = hh.ShowHangHoa("");
-            for (int i = 0; i < dataGridView1.RowCount - 1; i++)
-            {
-                dataGridView1.Rows[i].Cells[0].Value = (i + 1).ToString();
-            }
         }
 
-        
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaSP.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTenSP.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtSL.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtGN.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtGB.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();               
+                txtNSX.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtMoTa.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            }
+            catch { }
+        }
     }
 }
