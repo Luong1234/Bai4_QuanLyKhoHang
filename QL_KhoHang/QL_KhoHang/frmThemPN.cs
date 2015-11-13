@@ -7,27 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic;
 
 namespace QL_KhoHang
 {
-    public partial class frmNhapXuat : Form
+    public partial class frmThemPN : Form
     {
-        public frmNhapXuat()
+        public frmThemPN()
         {
             InitializeComponent();
         }
 
-
-        private void frmNhapXuat_Load(object sender, EventArgs e)
+        HangHoa hh = new HangHoa();
+        private void frmThemPN_Load(object sender, EventArgs e)
         {
-
+            HienThi();
         }
 
-        private void btnThemPN_Click(object sender, EventArgs e)
+        public void HienThi()
         {
-            frmThemPN frm = new frmThemPN();
-            frm.Show();
+            dgvSP.DataSource = hh.ShowHangHoa("");
         }
-
     }
 }
