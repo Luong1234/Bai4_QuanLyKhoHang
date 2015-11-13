@@ -132,6 +132,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.dgvCTHD);
             this.panel2.Controls.Add(this.txtTongTien);
@@ -205,12 +206,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(131, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(67, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tổng Tiền";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.btnThemPN);
@@ -306,7 +308,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(16, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 17);
+            this.label2.Size = new System.Drawing.Size(151, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Số lượng hóa đơn trong ";
             // 
@@ -387,6 +389,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Lime;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.textBox1);
@@ -460,12 +463,13 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(131, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.Size = new System.Drawing.Size(67, 17);
             this.label5.TabIndex = 2;
             this.label5.Text = "Tổng Tiền";
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Lime;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.groupBox2);
             this.panel4.Controls.Add(this.btnThemPX);
@@ -477,6 +481,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Lime;
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.dateTimePicker3);
             this.groupBox2.Controls.Add(this.dateTimePicker4);
@@ -561,7 +566,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(16, 38);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 17);
+            this.label8.Size = new System.Drawing.Size(151, 17);
             this.label8.TabIndex = 0;
             this.label8.Text = "Số lượng hóa đơn trong ";
             // 

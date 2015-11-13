@@ -65,6 +65,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.txtTK);
             this.panel1.Controls.Add(this.cboTK);
@@ -249,6 +250,8 @@
             this.cboTK.Items.AddRange(new object[] {
             "Mã SP",
             "Tên SP",
+            "Loại Hàng",
+            "NSX",
             "Giá",
             "Loại Hàng",
             "NSX"});
