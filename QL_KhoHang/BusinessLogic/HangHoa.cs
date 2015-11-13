@@ -21,31 +21,29 @@ namespace BusinessLogic
             ad.Fill(dt);
             return dt;
         }
-      
-        //public string InsertSanPham(EC_SANPHAM et)
-        //{
-        //    string sql = "ThemSP";
-        //    SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-        //    cmd.CommandType = CommandType.StoredProcedure;
-        //    cmd.Parameters.AddWithValue("@tensp", et.TenSP);
-        //    cmd.Parameters.AddWithValue("@malh", et.MaLH);
-        //    cmd.Parameters.AddWithValue("@soluong", et.SoLuong);
-        //    cmd.Parameters.AddWithValue("@loinhuan", et.LoiNhuan);
-        //    cmd.Parameters.AddWithValue("@gianhap", et.GiaNhap);
-        //    cmd.Parameters.AddWithValue("@mota", et.MoTa);
-        //    cmd.Parameters.AddWithValue("@nsx", et.NSX);
-        //    cmd.Parameters.AddWithValue("@hinhanh", et.HinhAnh);
 
-        //    DataTable dt = new DataTable();
-        //    SqlDataAdapter ad = new SqlDataAdapter(cmd);
-        //    ad.Fill(dt);
-        //    string ma = dt.Rows[0].ItemArray[0].ToString();
-        //    cmd.Dispose();
-        //    con.Close();
-        //    return ma;
-        //}
+        public string InsertHangHoa(string tenhh, int soluong, long giannhap, long giaxuat, string nsx, string thongtin)
+        {
+            string sql = "ThemHH";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tensp", tenhh);
+            cmd.Parameters.AddWithValue("@soluong", soluong);
+            cmd.Parameters.AddWithValue("@gianhap", giannhap);
+            cmd.Parameters.AddWithValue("@giaxuat", giaxuat);
+            cmd.Parameters.AddWithValue("@nsx", nsx);
+            cmd.Parameters.AddWithValue("@thongtin", thongtin);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            ad.Fill(dt);
+            string ma = dt.Rows[0].ItemArray[0].ToString();
+            cmd.Dispose();
+            con.Close();
+            return ma;
+        }
         //public void UpdateSanPham(EC_SANPHAM et)
         //{
         //    string sql = "SuaSP";
