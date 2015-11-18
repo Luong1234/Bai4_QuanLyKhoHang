@@ -42,5 +42,15 @@ namespace QL_KhoHang
             }
             catch { }
         }
+        private void txttk_TenHH_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = hh.TKHH_TenHH(txttk_TenHH.Text);
+
+        }
+        private void txttk_NSX_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = hh.TKHH_NSX(txttk_NSX.Text);
+        }
+
     }
 }

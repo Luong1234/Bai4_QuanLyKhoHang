@@ -16,7 +16,7 @@ namespace QL_KhoHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNhapXuat());
+            Application.Run(new Form1());
         }
     }
 }
