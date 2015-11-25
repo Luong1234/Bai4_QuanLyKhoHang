@@ -37,6 +37,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@MaHDB", MaHDB);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -54,11 +55,13 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@MaHDB", _MaHDB);
             cmd.Parameters.AddWithValue("@MaSP", _MaSP);
             cmd.Parameters.AddWithValue("@SoLuong", int.Parse(_SoLg));
             cmd.Parameters.AddWithValue("@dongia", float.Parse(_DonGia));
             cmd.Parameters.AddWithValue("@ThanhTien", float.Parse(_DonGia) * int.Parse(_SoLg));
+
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             con.Close();
@@ -70,6 +73,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@MaHDB", _MaHDB);
             cmd.Parameters.AddWithValue("@MaSP", _MaSP);
             cmd.ExecuteNonQuery();

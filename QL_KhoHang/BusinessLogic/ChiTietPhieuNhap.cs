@@ -26,6 +26,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@mahd", et.MaHD);
         //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
         //    cmd.Parameters.AddWithValue("@soluong", et.SoLuong);
@@ -44,6 +45,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@mahd", et.MaHD);
         //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
         //    cmd.Parameters.AddWithValue("@soluong", et.SoLuong);
@@ -62,6 +64,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@mahd", _MaHD);
         //    cmd.Parameters.AddWithValue("@masp", _MaSP);
 

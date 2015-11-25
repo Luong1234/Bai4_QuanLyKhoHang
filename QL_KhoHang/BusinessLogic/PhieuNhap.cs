@@ -29,6 +29,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@ngaydau", _NgayDau);
             cmd.Parameters.AddWithValue("@ngaycuoi", _NgayCuoi);
             SqlDataAdapter ad = new SqlDataAdapter(cmd);
@@ -43,6 +44,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@mancc", _MaNCC);
         //    SqlDataAdapter ad = new SqlDataAdapter(cmd);
         //    ad.Fill(dt);
@@ -56,6 +58,7 @@ namespace BusinessLogic
         //    SqlCommand cmd = new SqlCommand(sql, con);
             
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@mancc", et.MaNCC);
         //    cmd.Parameters.AddWithValue("@ngaynhap", et.NgayNhap);
         //    SqlDataAdapter ad = new SqlDataAdapter(cmd);

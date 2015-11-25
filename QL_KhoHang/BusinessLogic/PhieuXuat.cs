@@ -37,6 +37,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@tien1", tien1);
             cmd.Parameters.AddWithValue("@tien2", tien2);
 
@@ -56,6 +57,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@date", date);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -74,6 +76,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@date1", date1);
             cmd.Parameters.AddWithValue("@date2", date2);
 

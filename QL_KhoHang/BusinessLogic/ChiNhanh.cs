@@ -31,12 +31,14 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@TenKH", TenKH);
             cmd.Parameters.AddWithValue("@gt", Gioitinh);
             cmd.Parameters.AddWithValue("@DC", Diachi);
             cmd.Parameters.AddWithValue("@SDT", SDT);
             cmd.Parameters.AddWithValue("@LoaiKH", LoaiKH);
             cmd.Parameters.AddWithValue("@ghichu", Ghichu);
+
             //cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();
@@ -57,6 +59,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@MaKH", MaKh);
             cmd.Parameters.AddWithValue("@TenKH", TenKH);
             cmd.Parameters.AddWithValue("@gt", Gioitinh);
@@ -109,6 +112,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@str", _LoaiKH);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -126,6 +130,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@str", _DiaChi);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);

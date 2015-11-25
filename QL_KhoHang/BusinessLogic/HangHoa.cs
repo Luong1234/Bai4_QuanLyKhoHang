@@ -52,6 +52,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataAdapter da = new SqlDataAdapter();
+
             cmd.Parameters.AddWithValue("@TenHH",TenHH);
             da.SelectCommand = cmd;
             da.Fill(dt);
@@ -65,6 +66,7 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataAdapter da = new SqlDataAdapter();
+
             cmd.Parameters.AddWithValue("@NSX", NSX);
             da.SelectCommand = cmd;
             da.Fill(dt);
@@ -77,6 +79,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
         //    cmd.Parameters.AddWithValue("@tensp", et.TenSP);
         //    cmd.Parameters.AddWithValue("@malh", et.MaLH);
@@ -99,6 +102,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
         //    cmd.Parameters.AddWithValue("@sl", et.SoLuong);
         //    cmd.ExecuteNonQuery();
@@ -113,6 +117,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@masp", MaSP);
         //    cmd.Parameters.AddWithValue("@sl", SoLuong);
         //    cmd.ExecuteNonQuery();
@@ -127,6 +132,7 @@ namespace BusinessLogic
         //    con.Open();
         //    SqlCommand cmd = new SqlCommand(sql, con);
         //    cmd.CommandType = CommandType.StoredProcedure;
+
         //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
 
         //    cmd.ExecuteNonQuery();
@@ -177,7 +183,9 @@ namespace BusinessLogic
 //            con.Open();
 //            SqlCommand cmd = new SqlCommand(sql, con);
 //            cmd.CommandType = CommandType.StoredProcedure;
+
 //            cmd.Parameters.AddWithValue("@str", _str);
+
 
 //            SqlDataAdapter da = new SqlDataAdapter(cmd);
 //            da.Fill(dt);
@@ -195,6 +203,7 @@ namespace BusinessLogic
 //            con.Open();
 //            SqlCommand cmd = new SqlCommand(sql, con);
 //            cmd.CommandType = CommandType.StoredProcedure;
+
 //            cmd.Parameters.AddWithValue("@str", _str);
 
 //            SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -214,6 +223,7 @@ namespace BusinessLogic
 //            con.Open();
 //            SqlCommand cmd = new SqlCommand(sql, con);
 //            cmd.CommandType = CommandType.StoredProcedure;
+
 //            cmd.Parameters.AddWithValue("@str", _str);
 
 //            SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -229,6 +239,7 @@ namespace BusinessLogic
 //            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
 //            SqlCommand cmd = new SqlCommand(sql, con);
 //            cmd.CommandType = CommandType.StoredProcedure;
+
 //            cmd.Parameters.AddWithValue("@ngaydau", _NgayDau);
 //            cmd.Parameters.AddWithValue("@ngaycuoi", _NgayCuoi);
 //            SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -243,6 +254,7 @@ namespace BusinessLogic
 //            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
 //            SqlCommand cmd = new SqlCommand(sql, con);
 //            cmd.CommandType = CommandType.StoredProcedure;
+
 //            cmd.Parameters.AddWithValue("@ngaydau", _NgayDau);
 //            cmd.Parameters.AddWithValue("@ngaycuoi", _NgayCuoi);
 //            SqlDataAdapter da = new SqlDataAdapter(cmd);
