@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txttk_NSX = new System.Windows.Forms.TextBox();
+            this.txttk_TenHH = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtSL = new System.Windows.Forms.TextBox();
             this.txtGB = new System.Windows.Forms.TextBox();
@@ -56,13 +60,14 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txttk_TenHH = new System.Windows.Forms.TextBox();
-            this.txttk_NSX = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phiếuNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,11 +79,46 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 315);
             this.panel1.TabIndex = 1;
+            // 
+            // txttk_NSX
+            // 
+            this.txttk_NSX.Location = new System.Drawing.Point(470, 27);
+            this.txttk_NSX.Name = "txttk_NSX";
+            this.txttk_NSX.Size = new System.Drawing.Size(121, 20);
+            this.txttk_NSX.TabIndex = 90;
+            this.txttk_NSX.TextChanged += new System.EventHandler(this.txttk_NSX_TextChanged);
+            // 
+            // txttk_TenHH
+            // 
+            this.txttk_TenHH.Location = new System.Drawing.Point(223, 27);
+            this.txttk_TenHH.Name = "txttk_TenHH";
+            this.txttk_TenHH.Size = new System.Drawing.Size(142, 20);
+            this.txttk_TenHH.TabIndex = 89;
+            this.txttk_TenHH.TextChanged += new System.EventHandler(this.txttk_TenHH_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(381, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 13);
+            this.label8.TabIndex = 88;
+            this.label8.Text = "Nhà sản xuất";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(113, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.TabIndex = 87;
+            this.label3.Text = "Tên hàng hóa";
             // 
             // groupBox2
             // 
@@ -244,7 +284,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 26);
+            this.label9.Location = new System.Drawing.Point(12, 34);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 13);
             this.label9.TabIndex = 71;
@@ -327,39 +367,37 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // menuStrip1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 13);
-            this.label3.TabIndex = 87;
-            this.label3.Text = "Tên hàng hóa";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quảnLýToolStripMenuItem,
+            this.hướngDẫnToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(837, 24);
+            this.menuStrip1.TabIndex = 91;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // label8
+            // quảnLýToolStripMenuItem
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(378, 26);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 13);
-            this.label8.TabIndex = 88;
-            this.label8.Text = "Nhà sản xuất";
+            this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.phiếuNhậpToolStripMenuItem});
+            this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
+            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.quảnLýToolStripMenuItem.Text = "Quản lý";
             // 
-            // txttk_TenHH
+            // phiếuNhậpToolStripMenuItem
             // 
-            this.txttk_TenHH.Location = new System.Drawing.Point(220, 23);
-            this.txttk_TenHH.Name = "txttk_TenHH";
-            this.txttk_TenHH.Size = new System.Drawing.Size(142, 20);
-            this.txttk_TenHH.TabIndex = 89;
-            this.txttk_TenHH.TextChanged += new System.EventHandler(this.txttk_TenHH_TextChanged);
+            this.phiếuNhậpToolStripMenuItem.Name = "phiếuNhậpToolStripMenuItem";
+            this.phiếuNhậpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.phiếuNhậpToolStripMenuItem.Text = "Nhập/Xuất";
+            this.phiếuNhậpToolStripMenuItem.Click += new System.EventHandler(this.phiếuNhậpToolStripMenuItem_Click);
             // 
-            // txttk_NSX
+            // hướngDẫnToolStripMenuItem
             // 
-            this.txttk_NSX.Location = new System.Drawing.Point(467, 19);
-            this.txttk_NSX.Name = "txttk_NSX";
-            this.txttk_NSX.Size = new System.Drawing.Size(121, 20);
-            this.txttk_NSX.TabIndex = 90;
-            this.txttk_NSX.TextChanged += new System.EventHandler(this.txttk_NSX_TextChanged);
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
             // 
             // Form1
             // 
@@ -369,6 +407,7 @@
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Danh sách hàng hóa";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -377,6 +416,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,6 +456,10 @@
         private System.Windows.Forms.TextBox txttk_TenHH;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phiếuNhậpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
     }
 }
 

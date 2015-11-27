@@ -50,28 +50,28 @@ namespace BusinessLogic
         //    ad.Fill(dt);
         //    return dt;
         //}
-        //public string InsertHDN(EC_HOADONNHAP et)
-        //{
-        //    string sql = "ThemHDN";
-        //    SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-            
-        //    cmd.CommandType = CommandType.StoredProcedure;
+        public string InsertPN(string mancc, DateTime ngaynhap)
+        {
+            string sql = "ThemHDN";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
 
-        //    cmd.Parameters.AddWithValue("@mancc", et.MaNCC);
-        //    cmd.Parameters.AddWithValue("@ngaynhap", et.NgayNhap);
-        //    SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            cmd.CommandType = CommandType.StoredProcedure;
 
-        //    DataTable dt = new DataTable();
-        //    ad.Fill(dt);
-        //    string ma = dt.Rows[0].ItemArray[0].ToString();
-            
-        //    cmd.Dispose();
-        //    con.Close();
-        //    if (ma != null) return ma;
-        //    return "error";
-        //}
+            cmd.Parameters.AddWithValue("@mancc", mancc);
+            cmd.Parameters.AddWithValue("@ngaynhap", ngaynhap);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+            string ma = dt.Rows[0].ItemArray[0].ToString();
+
+            cmd.Dispose();
+            con.Close();
+            if (ma != null) return ma;
+            return "error";
+        }
         //public void UpdateHDN(EC_HOADONNHAP et)
         //{
         //    string sql = "SuaHDN";
@@ -103,21 +103,21 @@ namespace BusinessLogic
         //    con.Close();
         //}
 
-        //public string TongTien(string _MaHD)
-        //{
-        //    string sql = "TongTien";
-        //    SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-        //    cmd.CommandType = CommandType.StoredProcedure;
-        //    cmd.Parameters.AddWithValue("@mahd", _MaHD);
-        //    SqlDataAdapter ad = new SqlDataAdapter(cmd);
-        //    DataTable dt = new DataTable();
-        //    ad.Fill(dt);
-        //    cmd.Dispose();
-        //    con.Close();
-        //    string tien = dt.Rows[0].ItemArray[0].ToString();
-        //    return tien;
-        //}
+        public string TongTien(string mapn)
+        {
+            string sql = "TongTien";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@mapn", mapn);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+            cmd.Dispose();
+            con.Close();
+            string tien = dt.Rows[0].ItemArray[0].ToString();
+            return tien;
+        }
     }
 }

@@ -19,25 +19,25 @@ namespace BusinessLogic
             ad.Fill(dt);
             return dt;
         }
-        //public void InsertCTHD(EC_CTHD et)
-        //{
-        //    string sql = "ThemCTHD";
-        //    SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-        //    cmd.CommandType = CommandType.StoredProcedure;
+        public void InsertCTHD(string mapn, string mahh, int soluong, long dongia, long thanhtien)
+        {
+            string sql = "ThemCTHD";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
 
-        //    cmd.Parameters.AddWithValue("@mahd", et.MaHD);
-        //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
-        //    cmd.Parameters.AddWithValue("@soluong", et.SoLuong);
-        //    cmd.Parameters.AddWithValue("@dongia", et.GiaNhap);
-        //    cmd.Parameters.AddWithValue("@thanhtien", et.ThanhTien);
+            cmd.Parameters.AddWithValue("@mapn", mapn);
+            cmd.Parameters.AddWithValue("@mahh", mahh);
+            cmd.Parameters.AddWithValue("@soluong", soluong);
+            cmd.Parameters.AddWithValue("@dongia", dongia);
+            cmd.Parameters.AddWithValue("@thanhtien", thanhtien);
 
-        //    cmd.ExecuteNonQuery();
-        //    cmd.Dispose();
-        //    con.Close();
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
 
-        //}
+        }
         //public void UpdateHDN(EC_CTHD et)
         //{
         //    string sql = "SuaHDN";

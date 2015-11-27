@@ -52,5 +52,11 @@ namespace QL_KhoHang
             dataGridView1.DataSource = hh.TKHH_NSX(txttk_NSX.Text);
         }
 
+        private void phiếuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhapXuat frm = new frmNhapXuat();
+            frm.Show();
+        }
+
     }
 }
