@@ -697,7 +697,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "frmThemPN";
-            this.Text = "frmThemPN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm Phiếu Nhập Hàng";
             this.Load += new System.EventHandler(this.frmThemPN_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

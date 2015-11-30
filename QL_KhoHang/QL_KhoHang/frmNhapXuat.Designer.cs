@@ -308,7 +308,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(16, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 17);
+            this.label2.Size = new System.Drawing.Size(150, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Số lượng hóa đơn trong ";
             // 
@@ -566,7 +566,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(16, 38);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 17);
+            this.label8.Size = new System.Drawing.Size(150, 17);
             this.label8.TabIndex = 0;
             this.label8.Text = "Số lượng hóa đơn trong ";
             // 
@@ -629,7 +629,8 @@
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmNhapXuat";
-            this.Text = "frmNhapXuat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Nhập - Xuất";
             this.Load += new System.EventHandler(this.frmNhapXuat_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
