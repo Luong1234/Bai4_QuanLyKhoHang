@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ChiTietPhieuXuat.cs" />
     <Compile Include="ChiTietPhieuNhap.cs" />
+    <Compile Include="DangNhap.cs" />
     <Compile Include="PhieuXuat.cs" />
     <Compile Include="PhieuNhap.cs" />
     <Compile Include="KetNoiDB.cs" />

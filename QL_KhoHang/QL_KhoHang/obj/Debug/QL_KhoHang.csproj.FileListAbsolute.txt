@@ -18,7 +18,6 @@ E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\bin\Debug\QL_KhoHang.pdb
 E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\bin\Debug\BusinessLogic.dll
 E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\bin\Debug\BusinessLogic.pdb
 E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.csprojResolveAssemblyReference.cache
-E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.Form1.resources
 E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmNhapXuat.resources
 E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmThemPN.resources
 E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.Properties.Resources.resources
@@ -43,3 +42,8 @@ E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmThem
 E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.Main.resources
 E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.Properties.Resources.resources
 E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.csproj.GenerateResource.Cache
+E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmDangNhap.resources
+E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmHangHoa.resources
+E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmKhachHang.resources
+E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmNhaCungCap.resources
+E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.Main.resources
