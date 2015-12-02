@@ -64,10 +64,10 @@ namespace QL_KhoHang
             if (dgvSP.SelectedRows.Count > 0)
             {
                 dgvSPN.Rows.AddRange(new DataGridViewRow());
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = ma;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = soluong;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = gianhap;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[4].Value = soluong * gianhap;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[0].Value = ma;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = soluong;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = gianhap;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = soluong * gianhap;
             }
             
         }
@@ -94,10 +94,10 @@ namespace QL_KhoHang
             {
                 string ma = hh.InsertHangHoa(tenhh, soluong, gianhap, giaxuat, nsx, thongtin);
                 dgvSPN.Rows.AddRange(new DataGridViewRow());
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = ma;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = soluong;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = gianhap;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[4].Value = soluong * gianhap;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[0].Value = ma;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = soluong;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = gianhap;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = soluong * gianhap;
                 
                 MessageBox.Show("Thêm dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 HienThi();
