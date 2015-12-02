@@ -13,10 +13,9 @@ namespace BusinessLogic
 
         public DataTable HienThiKhachHang()
         {
-            string sql = "select * from CHINHANH";
+            string sql = @"SELECT * FROM CHINHANH ";
             DataTable dt = new DataTable();
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
             SqlDataAdapter ad = new SqlDataAdapter(sql, con);
             ad.Fill(dt);
             return dt;

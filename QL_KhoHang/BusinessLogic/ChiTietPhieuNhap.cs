@@ -12,7 +12,7 @@ namespace BusinessLogic
         KetNoiDB da = new KetNoiDB();
         public DataTable ShowCTPN(string DieuKien)
         {
-            string sql = @"SELECT MaHH, SoLuong, DonGia, ThanhTien FROM PHIEUNHAP " + DieuKien;
+            string sql = @"SELECT MaHH, SoLuong, DonGia, ThanhTien FROM CHITIETPHIEUNHAP " + DieuKien;
             DataTable dt = new DataTable();
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
             SqlDataAdapter ad = new SqlDataAdapter(sql, con);
@@ -21,7 +21,7 @@ namespace BusinessLogic
         }
         public void InsertCTHD(string mapn, string mahh, int soluong, long dongia, long thanhtien)
         {
-            string sql = "ThemCTHD";
+            string sql = "ThemCTPN";
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -38,39 +38,25 @@ namespace BusinessLogic
             con.Close();
 
         }
-        //public void UpdateHDN(EC_CTHD et)
-        //{
-        //    string sql = "SuaHDN";
-        //    SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-        //    cmd.CommandType = CommandType.StoredProcedure;
 
-        //    cmd.Parameters.AddWithValue("@mahd", et.MaHD);
-        //    cmd.Parameters.AddWithValue("@masp", et.MaSP);
-        //    cmd.Parameters.AddWithValue("@soluong", et.SoLuong);
-        //    cmd.Parameters.AddWithValue("@dongia", et.GiaNhap);
-        //    cmd.Parameters.AddWithValue("@thanhtien", et.ThanhTien);
+        public DataTable HienThi(string DieuKien)
+        {
+            string sql = @"SELECT * FROM CHITIETPHIEUNHAP WHERE MaPN = '" + DieuKien + "'";
+            DataTable dt = new DataTable();
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            SqlDataAdapter ad = new SqlDataAdapter(sql, con);
+            ad.Fill(dt);
+            return dt;
+        }
 
-        //    cmd.ExecuteNonQuery();
-        //    cmd.Dispose();
-        //    con.Close();
-
-        //}
-        //public void DeleteCTHD(string _MaHD, string _MaSP)
-        //{
-        //    string sql = "XoaCTHD";
-        //    SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-        //    cmd.CommandType = CommandType.StoredProcedure;
-
-        //    cmd.Parameters.AddWithValue("@mahd", _MaHD);
-        //    cmd.Parameters.AddWithValue("@masp", _MaSP);
-
-        //    cmd.ExecuteNonQuery();
-        //    cmd.Dispose();
-        //    con.Close();
-        //}
+        public DataTable HienThiTien(string DieuKien)
+        {
+            string sql = @"SELECT TongTien FROM PHIEUNHAP WHERE MaPN = '" + DieuKien + "'";
+            DataTable dt = new DataTable();
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            SqlDataAdapter ad = new SqlDataAdapter(sql, con);
+            ad.Fill(dt);
+            return dt;
+        }
     }
 }

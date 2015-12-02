@@ -12,142 +12,80 @@ namespace BusinessLogic
     {
         KetNoiDB kn = new KetNoiDB();
 
-        public DataTable HienThiPX()
+        public DataTable ShowPX(string DieuKien)
         {
+            string sql = @"SELECT MaPX, MaCN, NgayXuat FROM PHIEUXUAT " + DieuKien;
             DataTable dt = new DataTable();
-            string sql = "ShowPX";
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-
-            cmd.Dispose();
-            con.Close();
+            SqlDataAdapter ad = new SqlDataAdapter(sql, con);
+            ad.Fill(dt);
             return dt;
         }
 
-        public DataTable HienThiHDB(long tien1, long tien2)
+        public void addTien(string MaPX)
         {
-            DataTable dt = new DataTable();
-            string sql = "ShowHDBTongTien";
+            string sql = "TienXuat";
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
-
-            cmd.Parameters.AddWithValue("@tien1", tien1);
-            cmd.Parameters.AddWithValue("@tien2", tien2);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-
-            cmd.Dispose();
-            con.Close();
-            return dt;
-        }
-
-        public DataTable HienThiHDB(DateTime date)
-        {
-            DataTable dt = new DataTable();
-            string sql = "ShowHDB1Ngay";
-            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cmd.Parameters.AddWithValue("@date", date);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-
-            cmd.Dispose();
-            con.Close();
-            return dt;
-        }
-
-        public DataTable HienThiHDB(DateTime date1, DateTime date2)
-        {
-            DataTable dt = new DataTable();
-            string sql = "ShowHDBNhieuNgay";
-            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cmd.Parameters.AddWithValue("@date1", date1);
-            cmd.Parameters.AddWithValue("@date2", date2);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-
-            cmd.Dispose();
-            con.Close();
-            return dt;
-        }
-
-        public DataTable HienThiTop10HDB()
-        {
-            DataTable dt = new DataTable();
-            string sql = "MuaNhieuNhat";
-            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-
-            cmd.Dispose();
-            con.Close();
-            return dt;
-        }
-        public string InsertHDB(string _MaKH, DateTime _ngayban)
-        {
-            string str = "";
-            string sql = "InsertHDB";
-            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@MaKH", _MaKH);
-            cmd.Parameters.AddWithValue("@NgayBan", _ngayban);
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            str = dt.Rows[0].ItemArray[0].ToString();
-
-            cmd.Dispose();
-            con.Close();
-
-            return str;
-        }
-        public void DeleteHDB(string _MaHDB)
-        {
-            string str = "DeleteHDB";
-            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(str, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@MaHDB", _MaHDB);
+            cmd.Parameters.AddWithValue("@MaPX", MaPX);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             con.Close();
         }
-        public void UpdateHDB(string _MaHDB)
+
+        public DataTable HT_CTPX(string ngay1, string ngay2)
         {
-            string str = "UpdateHDB";
+            string str = "HT_TK_CTPX";
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
+            DataTable dt = new DataTable();
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@MaHDB", _MaHDB);
-            cmd.ExecuteNonQuery();
+            cmd.Parameters.AddWithValue("@Ngay1", DateTime.Parse(ngay1));
+            cmd.Parameters.AddWithValue("@Ngay2", DateTime.Parse(ngay2));
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable HT_PX(string ngay1, string ngay2)
+        {
+            string str = "TK_PX";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand(str, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Ngay1", DateTime.Parse(ngay1));
+            cmd.Parameters.AddWithValue("@Ngay2", DateTime.Parse(ngay2));
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+        
+        public string InsertPX(string macn, DateTime ngayxuat)
+        {
+            string sql = "ThemPX";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@macn", macn);
+            cmd.Parameters.AddWithValue("@ngayxuat", ngayxuat);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+            string ma = dt.Rows[0].ItemArray[0].ToString();
+
             cmd.Dispose();
             con.Close();
+            if (ma != null) return ma;
+            return "error";
         }
+        
     }
 }

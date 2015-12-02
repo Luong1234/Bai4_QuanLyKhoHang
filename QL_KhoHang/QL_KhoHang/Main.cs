@@ -33,5 +33,11 @@ namespace QL_KhoHang
         {
             
         }
+
+        private void nhậpXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhapXuat frm = new frmNhapXuat();
+            frm.Show();
+        }
     }
 }

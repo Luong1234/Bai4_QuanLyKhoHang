@@ -119,7 +119,7 @@ namespace QL_KhoHang
         {
             for (int i = 0; i < dgvSPN.Rows.Count; i++)
             {
-                if (dgvSPN.Rows[i].Cells[1].Value == dgvSP.Rows[dgvSP.SelectedRows[0].Index].Cells[1].Value)
+                if (dgvSPN.Rows[i].Cells[0].Value == dgvSP.Rows[dgvSP.SelectedRows[0].Index].Cells[0].Value)
                 {
                     MessageBox.Show("Sản phẩm đã được chọn !!!", "Nhắc nhở", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -128,10 +128,10 @@ namespace QL_KhoHang
             if (dgvSP.SelectedRows.Count > 0)
             {
                 dgvSPN.Rows.AddRange(new DataGridViewRow());
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = mahh;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = numericUpDownSL.Value;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = numericUpDownGN.Value;
-                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[4].Value = int.Parse(numericUpDownSL.Value.ToString()) * long.Parse(numericUpDownGN.Value.ToString());
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[0].Value = mahh;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = numericUpDownSL.Value;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = numericUpDownGN.Value;
+                dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = int.Parse(numericUpDownSL.Value.ToString()) * long.Parse(numericUpDownGN.Value.ToString());
             }
         }
 
@@ -158,7 +158,7 @@ namespace QL_KhoHang
         private void dgvSP_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             indexSP = e.RowIndex;
-            mahh = dgvSP.Rows[e.RowIndex].Cells[1].Value.ToString();
+            mahh = dgvSP.Rows[e.RowIndex].Cells[0].Value.ToString();
             soluong = int.Parse(numericUpDownSL.Value.ToString());
             gianhap = long.Parse(numericUpDownGN.Value.ToString());
             //pictureBox1.Image = Image.FromFile(@"image//laptop//" + sp.LayAnh(dgvSP.Rows[e.RowIndex].Cells[1].Value.ToString()));
@@ -179,16 +179,22 @@ namespace QL_KhoHang
 
                 for (int i = 0; i < dgvSPN.Rows.Count - 1; i++)
                 {
-                    mahh = dgvSPN.Rows[i].Cells[1].Value.ToString();
-                    soluong = int.Parse(dgvSPN.Rows[i].Cells[2].Value.ToString());
-                    gianhap = long.Parse(dgvSPN.Rows[i].Cells[3].Value.ToString());
-                    long thanhtien = long.Parse(dgvSPN.Rows[i].Cells[4].Value.ToString());
+                    mahh = dgvSPN.Rows[i].Cells[0].Value.ToString();
+                    soluong = int.Parse(dgvSPN.Rows[i].Cells[1].Value.ToString());
+                    gianhap = long.Parse(dgvSPN.Rows[i].Cells[2].Value.ToString());
+                    long thanhtien = long.Parse(dgvSPN.Rows[i].Cells[3].Value.ToString());
                     ctpn.InsertCTHD(mapn, mahh, soluong, gianhap, thanhtien);
+                    pn.addTien(mapn);
                     //sp.UpdateSoLuong(et_sp);
                 }
                 MessageBox.Show("Thêm dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnTao_Click(sender, e);
+               // btnTao_Click(sender, e);
             }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
