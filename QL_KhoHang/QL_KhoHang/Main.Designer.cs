@@ -33,7 +33,6 @@
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giáoViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.họcSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,7 +56,6 @@
             this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.giáoViênToolStripMenuItem,
             this.họcSinhToolStripMenuItem,
-            this.kháchHàngToolStripMenuItem,
             this.nhậpXuấtToolStripMenuItem});
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
             this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -76,13 +74,6 @@
             this.họcSinhToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.họcSinhToolStripMenuItem.Text = "Nhà cung cấp";
             this.họcSinhToolStripMenuItem.Click += new System.EventHandler(this.họcSinhToolStripMenuItem_Click);
-            // 
-            // kháchHàngToolStripMenuItem
-            // 
-            this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
-            this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
             // nhậpXuấtToolStripMenuItem
             // 
@@ -138,7 +129,6 @@
         private System.Windows.Forms.ToolStripMenuItem giáoViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem họcSinhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem nhậpXuấtToolStripMenuItem;
     }

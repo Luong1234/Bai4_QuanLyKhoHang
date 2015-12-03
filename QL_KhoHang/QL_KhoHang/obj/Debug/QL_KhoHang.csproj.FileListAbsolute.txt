@@ -25,7 +25,6 @@ E:\Clone\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.csproj.Ge
 D:\dung\Kì I - Năm 4\Thực tập nhóm\save\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.Main.resources
 D:\dung\Kì I - Năm 4\Thực tập nhóm\save\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmHangHoa.resources
 D:\dung\Kì I - Năm 4\Thực tập nhóm\save\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmNhaCungCap.resources
-D:\dung\Kì I - Năm 4\Thực tập nhóm\save\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.frmKhachHang.resources
 E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\bin\Debug\QL_KhoHang.exe.config
 E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.exe
 E:\Githubs\Bai4_QuanLyKhoHang\QL_KhoHang\QL_KhoHang\obj\Debug\QL_KhoHang.pdb
