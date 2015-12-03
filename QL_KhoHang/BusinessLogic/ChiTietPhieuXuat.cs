@@ -14,7 +14,7 @@ namespace BusinessLogic
 
         public DataTable ShowCTPX(string DieuKien)
         {
-            string sql = @"SELECT MaHH, SoLuong, DonGia, ThanhTien FROM CHITIETPHIEUXUAT " + DieuKien;
+            string sql = @"SELECT MaHH, SoLuong, DonGia, ThanhTien FROM ChiTietPhieuXuat " + DieuKien;
             DataTable dt = new DataTable();
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
             SqlDataAdapter ad = new SqlDataAdapter(sql, con);
@@ -33,7 +33,7 @@ namespace BusinessLogic
             cmd.Parameters.AddWithValue("@mapx", mapx);
             cmd.Parameters.AddWithValue("@mahh", mahh);
             cmd.Parameters.AddWithValue("@soluong", soluong);
-            cmd.Parameters.AddWithValue("@dongia", dongia);
+            cmd.Parameters.AddWithValue("@DonGia", dongia);
             cmd.Parameters.AddWithValue("@thanhtien", thanhtien);
 
             cmd.ExecuteNonQuery();

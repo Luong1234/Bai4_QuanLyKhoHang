@@ -13,7 +13,7 @@ namespace BusinessLogic
 
         public DataTable HienThiKhachHang()
         {
-            string sql = @"SELECT * FROM CHINHANH ";
+            string sql = @"SELECT * FROM CHINHANH";
             DataTable dt = new DataTable();
             SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
             SqlDataAdapter ad = new SqlDataAdapter(sql, con);
@@ -37,9 +37,6 @@ namespace BusinessLogic
             cmd.Parameters.AddWithValue("@SDT", SDT);
             cmd.Parameters.AddWithValue("@LoaiKH", LoaiKH);
             cmd.Parameters.AddWithValue("@ghichu", Ghichu);
-
-            //cmd.ExecuteNonQuery();
-
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
