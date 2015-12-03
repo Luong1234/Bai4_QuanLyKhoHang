@@ -36,7 +36,6 @@ namespace BusinessLogic
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             con.Close();
-
         }
 
         public DataTable HienThi(string DieuKien)
