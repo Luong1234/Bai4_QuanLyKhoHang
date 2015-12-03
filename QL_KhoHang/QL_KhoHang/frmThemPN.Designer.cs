@@ -320,8 +320,6 @@
             this.cboTK.Items.AddRange(new object[] {
             "Mã SP",
             "Tên SP",
-            "Giá",
-            "Loại Hàng",
             "NSX"});
             this.cboTK.Location = new System.Drawing.Point(663, 12);
             this.cboTK.Name = "cboTK";
@@ -383,6 +381,7 @@
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(250, 20);
             this.txtTK.TabIndex = 108;
+            this.txtTK.TextChanged += new System.EventHandler(this.txtTK_TextChanged);
             // 
             // numericUpDownGN
             // 

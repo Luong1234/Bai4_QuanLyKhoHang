@@ -196,5 +196,23 @@ namespace QL_KhoHang
         {
             this.Close();
         }
+
+        private void txtTK_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTK.Text == "") HienThi();
+            else
+            {
+                if (cboTK.SelectedIndex == 0) TimKiem("MaHH");
+                else if (cboTK.SelectedIndex == 1) TimKiem("TenHH");
+                else if (cboTK.SelectedIndex == 2) TimKiem("NSX");
+            }
+        }
+        public void TimKiem(string DieuKien)
+        {
+            //if (cboTK.SelectedIndex != 2) 
+            dgvSP.DataSource = hh.ShowHangHoa("where " + DieuKien + " LIKE N'%" + txtTK.Text + "%'");
+            //else dgvSP.DataSource = hh.ShowHangHoa("where " + DieuKien + " = " + txtTK.Text);
+                        
+        }
     }
 }
