@@ -75,16 +75,16 @@ namespace BusinessLogic
 
             cmd.Parameters.AddWithValue("@macn", macn);
             cmd.Parameters.AddWithValue("@ngayxuat", ngayxuat);
-            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             DataTable dt = new DataTable();
-            ad.Fill(dt);
+            da.Fill(dt);
             string ma = dt.Rows[0].ItemArray[0].ToString();
 
             cmd.Dispose();
             con.Close();
             if (ma != null) return ma;
-            return "error";
+            return "Error";
         }
         
     }
