@@ -29,11 +29,11 @@ namespace QL_KhoHang
             frm.Show();
         }
 
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmChiNhanh cn = new frmChiNhanh();
-            cn.Show();
-        }
+        //private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    frmChiNhanh cn = new frmChiNhanh();
+        //    cn.Show();
+        //}
 
         private void nhậpXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -45,6 +45,12 @@ namespace QL_KhoHang
         {
             frmHuongDan frm = new frmHuongDan();
             frm.Show();
+        }
+
+        private void chiNhánhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChiNhanh cn = new frmChiNhanh();
+            cn.Show();
         }
     }
 }

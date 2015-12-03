@@ -27,7 +27,6 @@ namespace BusinessLogic
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
-
             cmd.Parameters.AddWithValue("@TenNCC", _TenNCC);
             cmd.Parameters.AddWithValue("@DiaChi", _DiaChi);
             cmd.Parameters.AddWithValue("@SDT", _SDT);
