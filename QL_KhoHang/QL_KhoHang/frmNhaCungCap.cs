@@ -18,10 +18,15 @@ namespace QL_KhoHang
             InitializeComponent();
         }
         NhaCungCap ncc = new NhaCungCap();
+        int chon = 0;
+
         private void frmNhaCungCap_Load(object sender, EventArgs e)
         {
             HienThi();
+            SetNull();
             cboTK.SelectedIndex = 0;
+            KhoaDieuKhien();
+            chon = 0;
         }
 
         public void HienThi()
@@ -72,63 +77,12 @@ namespace QL_KhoHang
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (MessageBox.Show("Bạn có chắc chắn muốn xóa dữ liệu không ???", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    if (dataGridView1.SelectedRows.Count == 1) ncc.DeleteNCC(txtMaNCC.Text);
-                    else if (dataGridView1.SelectedRows.Count > 1)
-                    {
-                        for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
-                        {
-                            ncc.DeleteNCC(dataGridView1.Rows[dataGridView1.SelectedRows[i].Index].Cells[0].Value.ToString());
-                        }
-                    }
-                    HienThi();
-                    MessageBox.Show("Xóa dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Không xóa được dữ liệu !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (txtTenNCC.Text == "")
-            {
-                MessageBox.Show("Bạn chưa nhập tên sản phẩm !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtDiaChi.Text == "")
-            {
-                MessageBox.Show("Bạn chưa nhập tên NSX !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtSDT.Text == "")
-            {
-                MessageBox.Show("Bạn chưa nhập thông tin sản phẩm !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            long serult;
-            if (long.TryParse(txtSDT.Text, out serult) == false) 
-            {
-                MessageBox.Show("Số điện thoại không hợp lệ !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            try
-            {
-                ncc.InsertNCC(txtTenNCC.Text, txtDiaChi.Text, txtSDT.Text);
-                MessageBox.Show("Thêm dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                HienThi();
-                cboTK.Enabled = true;
-                txtTK.Enabled = true;
-                btnLuu.Enabled = false;
-                btnHuy.Enabled = false;
-                btnThem.Enabled = true;
-            }
-            catch { }
+
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -143,7 +97,7 @@ namespace QL_KhoHang
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn Có Chắc Muốn Thoát Ứng DỤng Này?", "Cảnh Báo", MessageBoxButtons.YesNo)==DialogResult.Yes)
+            if(MessageBox.Show("Bạn Có Chắc Muốn Thoát Ứng Dụng Này?", "Cảnh Báo", MessageBoxButtons.YesNo)==DialogResult.Yes)
                 this.Close();
         }
 
@@ -179,6 +133,82 @@ namespace QL_KhoHang
                 else if (cboTK.SelectedIndex == 2) TimKiem("DiaChi");
                 else if (cboTK.SelectedIndex == 3) TimKiem("SDT");
             }
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
+        {
+            MoDieuKhien();
+            SetNull();
+            chon = 1;
+
+        }
+        void KhoaDieuKhien()
+        {
+            txtTenNCC.Enabled = txtDiaChi.Enabled = txtSDT.Enabled = false;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = true;
+            btnLuu.Enabled = false;
+        }
+        void MoDieuKhien()
+        {
+            txtTenNCC.Enabled = txtDiaChi.Enabled = txtSDT.Enabled = true;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+        }
+
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
+            MoDieuKhien();
+            SetNull();
+            chon = 2;
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            if (txtMaNCC.Text == "")
+                MessageBox.Show("Chọn Nhà cung cấp!");
+            else
+                if (DialogResult.Yes == MessageBox.Show("Bạn muốn xóa Nhà cung cấp này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    ncc.DeleteNCC(txtMaNCC.Text);
+                    MessageBox.Show("Xóa thành công!");
+                    frmNhaCungCap_Load(sender, e);
+                    SetNull();
+                }
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+            if (chon == 1)
+            {
+                if (txtTenNCC.Text == "" || txtDiaChi.Text == "" || txtSDT.Text == "")
+                    MessageBox.Show("Mời nhập đầy đủ thông tin!");
+                else
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn thêm Nhà cung cấp này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                    {
+                        ncc.InsertNCC(txtTenNCC.Text, txtDiaChi.Text, txtSDT.Text);
+                        MessageBox.Show("Thêm thành công!");
+                        SetNull();
+                        frmNhaCungCap_Load(sender, e);
+                    }
+            }
+            else if (chon == 2)
+            {
+                if (txtTenNCC.Text == "" || txtDiaChi.Text == "" || txtSDT.Text == "")
+                    MessageBox.Show("Mời nhập đầy đủ thông tin!");
+                else
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn Sửa Nhà cung cấp này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                    {
+                        ncc.UpdateNCC(txtMaNCC.Text, txtTenNCC.Text, txtDiaChi.Text, txtSDT.Text);
+                        MessageBox.Show("Sửa thành công!");
+                        SetNull();
+                        frmNhaCungCap_Load(sender, e);
+                    }
+            }
+        }
+
+        private void btnHuy_Click_1(object sender, EventArgs e)
+        {
+            frmNhaCungCap_Load(sender, e);
         }
     }
 }

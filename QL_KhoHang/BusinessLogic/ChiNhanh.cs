@@ -21,6 +21,83 @@ namespace BusinessLogic
             return dt;
         }
 
+        public void ThemChiNhanh(string TenCN, string DiaChi, string SDT)
+        {
+            string sql = "ThemCN";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@TenCN", TenCN);
+            cmd.Parameters.AddWithValue("@DiaChi", DiaChi);;
+            cmd.Parameters.AddWithValue("@SDT", SDT);
+
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
+        }
+
+        public void SuaChiNhanh(string MaCN, string TenCN, string DiaChi, string SDT)
+        {
+            string sql = "SuaCN";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@TenCN", TenCN);
+            cmd.Parameters.AddWithValue("@DiaChi", DiaChi); ;
+            cmd.Parameters.AddWithValue("@SDT", SDT);
+            cmd.Parameters.AddWithValue("@MaCN", MaCN);
+
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
+        }
+
+        public void XoaCN(string MaCN)
+        {
+            string sql = "XoaCN";
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@MaCN", MaCN);
+
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
+        }
+
+        public DataTable TKMa(string MaCN)
+        {
+            string sql = "SELECT * FROM CHINHANH WHERE MaCN LIKE N'%' + @MaCN + '%'";
+            DataTable dt = new DataTable();
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter();
+            cmd.Parameters.AddWithValue("@MaCN", MaCN);
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+            return dt;
+
+        }
+
+        public DataTable TKTenCN(string TenCN)
+        {
+            string sql = "SELECT * FROM CHINHANH WHERE TenCN LIKE N'%' + @TenCN + '%'";
+            DataTable dt = new DataTable();
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter();
+            cmd.Parameters.AddWithValue("@TenCN", TenCN);
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+            return dt;
+
+        }
+
         public string InsertKhachHang(string TenKH, string Gioitinh, string Diachi, string SDT, string LoaiKH, string Ghichu)
         {
             string str = "";

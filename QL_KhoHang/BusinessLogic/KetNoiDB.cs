@@ -14,7 +14,7 @@ namespace BusinessLogic
         static public String getconnect()
         {
 
-            return (@"Data Source=PHAMVANLUONG\SQLEXPRESS;Initial Catalog=QL_KhoHang;Integrated Security=True");
+            return (@"Data Source=HOA_LONG\SQLEXPRESS;Initial Catalog=QL_KhoHang;Integrated Security=True");
         }
     }
 }

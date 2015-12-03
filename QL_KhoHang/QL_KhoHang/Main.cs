@@ -31,7 +31,8 @@ namespace QL_KhoHang
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frmChiNhanh cn = new frmChiNhanh();
+            cn.Show();
         }
 
         private void nhậpXuấtToolStripMenuItem_Click(object sender, EventArgs e)
