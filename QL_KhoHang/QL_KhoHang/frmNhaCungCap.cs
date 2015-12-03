@@ -143,7 +143,8 @@ namespace QL_KhoHang
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(MessageBox.Show("Bạn Có Chắc Muốn Thoát Ứng DỤng Này?", "Cảnh Báo", MessageBoxButtons.YesNo)==DialogResult.Yes)
+                this.Close();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -155,7 +156,9 @@ namespace QL_KhoHang
                 txtDiaChi.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txtSDT.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             }
-            catch { }
+            catch { 
+                
+            }
         }
         public void TimKiem(string DieuKien)
         {

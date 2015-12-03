@@ -76,7 +76,8 @@ namespace QL_KhoHang
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Bạn Có Chắc Muốn Thoát Ứng DỤng Này?", "Cảnh Báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                this.Close();
         }
 
     }
