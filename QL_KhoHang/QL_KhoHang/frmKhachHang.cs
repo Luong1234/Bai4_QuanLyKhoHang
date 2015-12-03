@@ -121,7 +121,7 @@ namespace QL_KhoHang
             }
             catch
             {
-                MessageBox.Show("Lưu Thất Bại.");
+                MessageBox.Show("Save Failed! Again!.");
             }
             setNULL();
             DKOThongTin(false);

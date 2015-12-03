@@ -85,7 +85,7 @@
             // 
             // dgvKhachHang
             // 
-            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Teal;
+            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
@@ -555,7 +555,7 @@
             this.lblTopic.ForeColor = System.Drawing.Color.Red;
             this.lblTopic.Location = new System.Drawing.Point(342, 15);
             this.lblTopic.Name = "lblTopic";
-            this.lblTopic.Size = new System.Drawing.Size(239, 27);
+            this.lblTopic.Size = new System.Drawing.Size(238, 27);
             this.lblTopic.TabIndex = 23;
             this.lblTopic.Text = "Thông Tin Khách Hàng";
             // 
